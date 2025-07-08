@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>ROSEVIEW ESTATES - Pictou Nova Scotia </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--
+
+TemplateMo 591 villa agency
+
+https://templatemo.com/tm-591-villa-agency
+
+-->
+</head>
+
+<body>
+
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i>Roseviewdevelopments@gmail.com</li>
+            <li><i class="fa fa-phone"></i> (902) 222-3669 </li>
+            <li><i class="fa fa-map"></i> 196 Beeches Rd, Pictou, NS</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/RoseviewDevelopments/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://ca.linkedin.com/company/roseview-developments-inc"><i class="fab fa-linkedin"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <!-- ***** Logo Start ***** -->
+
+          <div class="col-2 text-center  ">
+            <div class="row col-12">
+              <div class="col-6 ">
+                <img class="center" src="assets/images/RoseviewLogo.webp"> </div>
+              <div class="col-6">
+                <h1 style="font-size: 1.5rem;"> Rose View Estates</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 text-center" style="padding-top: 20px;">
+            <p class=""> With</p>
+          </div>
+          <div class="col-2 text-center">
+            <div class="row col-12">
+              <div class="col-6"><img class="center" src="assets\images\agency-logo.svg"> </div>
+              <div class="col-6">
+                <h1 style="font-size: 1.5rem;">The Agency</h1>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <div class="col-6">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="Estimates.html" class="active">Estimates</a></li>  
+              <li><a href="property-details.html">About us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+<section class="page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Estimate Your Home</h3>
+        <span>Choose model, finishes, and customizations</span>
+      </div>
+    </div>
+  </div>
+</section>
+ <main id="quote" class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="quoteForm" action="price.php" method="POST" class="card p-4 shadow-sm">
+          <h2 class="mb-4">Step 1 – Choose Your Home Model</h2>
+          <div class="mb-3">
+            <label class="form-label" for="model">Model</label>
+            <select class="form-select" id="model" name="model" required>
+              <option value="lily">Lily – 1,260 sq ft</option>
+              <option value="ivy">Ivy – 1,320 sq ft</option>
+              <option value="iris">Iris – 1,600 sq ft</option>
+              <option value="orchid">Orchid – 1,900 sq ft</option>
+            </select>
+          </div>
+
+<div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+            <button type="button" id="leftArrow" class="btn btn-outline-secondary btn-sm d-none">←</button>
+            <img id="modelPreview" src="/assets/images/lily.webp" alt="Home model preview" class="img-fluid preview-img rounded shadow-sm" >
+            <button type="button" id="rightArrow" class="btn btn-outline-secondary btn-sm d-none">→</button>
+          </div>
+
+          
+<h2 class="mt-4 mb-3">Step 2 – Select Your Lot</h2>
+<div class="mb-3">
+  <label for="lotSelect" class="form-label">Available Lots</label>
+  <select class="form-select" id="lotSelect" name="lot">
+    <option value="">-- Select a lot --</option>
+    <option value="lot3">Lot 3</option>
+    <option value="lot5">Lot 5</option>
+    <option value="lot6">Lot 6</option>
+    <option value="lot7">Lot 7</option>
+    <option value="lot8">Lot 8</option>
+    <option value="lot9">Lot 9</option>
+  </select>
+</div>
+<div class="text-center mb-3">
+  <img id="lotPreview" src="assets/images/lotsOverview.webp" alt="Lot overview" class="img-fluid rounded shadow-sm" >
+  <div id="lotCaption" class="mt-2 text-muted">Site Overview</div>
+</div>
+
+
+
+
+          <h2 class="mt-4 mb-3">Step 3 – Select Add‑Ons</h2>
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="garage" id="garage" name="addons[]">
+              <label class="form-check-label" for="garage">Attached Garage</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="basement" id="basement" name="addons[]">
+              <label class="form-check-label" for="basement">Finished Basement</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="deck" id="deck" name="addons[]">
+              <label class="form-check-label" for="deck">Rear Deck & Patio Package</label>
+            </div>
+          </div>
+
+          <div class="alert alert-primary d-none" id="jsPriceBox"></div>
+
+          <button class="btn btn-primary w-100" type="submit">Email Me a Quote</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>© <span id="year"></span> Roseview Estates – 196 Beeches Rd, Pictou, NS</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
